@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<form>
+請輸入重量 (台斤): <input type="text" id="weight">
+</form>
+<p id="換算"></p>
+<button type="button" onclick="cal()">換算</button>
+<input type ="button" onclick="javascript:location.href='1228.html'" value="回到首頁"></input>
+<script>
+function cal(){
+let weight = document.getElementById("weight").value;
+let 換算 = weight*0.6;
+document.getElementById("換算").innerHTML= 換算;
+}
+</script>
+</body>
+</html>
